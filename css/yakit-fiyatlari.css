@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.042vw;
+    background-color: #FFD700;
+}
+
+.logo img {
+    height: 2.604vw;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.042vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: white; /* Gri arka plan rengi */
+    padding: 2vw; /* Padding artırıldı */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5vw;
+    border: 0.208vw solid transparent; /* Şeffaf çerçeve kenarı */
+    border-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red) 1; /* Gökküşağı renkleri */
+    border-image-slice: 1;
+    border-radius: 0.521vw;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text h2 {
+    margin: 0;
+}
+
+.fuel-prices {
+    padding: 2.604vw 1.042vw 4vw; /* Alt boşluk artırıldı */
+    text-align: center;
+}
+
+.fuel-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.042vw;
+}
+
+.fuel-item {
+    background-color: #FFD700;
+    padding: 1.042vw;
+    border-radius: 0.521vw;
+    width: 7.813vw;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 2vw; /* Kutucukların üst boşluğu artırıldı */
+}
+
+.fuel-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0.781vw rgba(0, 0, 0, 0.2);
+}
+
+.fuel-item h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1.042vw;
+    background-color: #FFD700;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+hr {
+    display: none; /* Düz çizgiyi gizle */
+}
+
+/* Varsayılan hr etiketi stilini sıfırlama */
+hr {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
